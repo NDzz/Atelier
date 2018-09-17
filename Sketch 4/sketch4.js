@@ -13,7 +13,7 @@ function setup() {
 
 function draw() {
 var vol = mic.getLevel();
-// console.log(vol);
+console.log(vol);
 
   var targetX = mouseX;
   var dx = targetX - x;
@@ -37,27 +37,27 @@ var vol = mic.getLevel();
     frameRate(100);
   }
 
-  if(vol > 0.070){
-    smile2();
-    fill(random(255),random(255),random(255));
+  if(vol > 0.075){    
+    this.ellipse(x,y+30, 60, vol*300)
+    this.fill(0);
+    this.stroke(0)
+
+   fill(random(255),random(255),random(255));
+
+
     }else{
       smile();
     }
   }
 
-function ellipse(){
-    this.ellipse(x,y+30, 60, vol*300)
-    this.noFill();
-}
+// function mouth(){
+//     this.ellipse(x,y+30, 60, vol*200)
+//     this.noFill();
+//     this.stroke(0)
+// }
 
 function smile(){
   this.noFill();
   this.arc(x, y+20, 60, 55, 0, PI);
-
-}
-
-function smile2(){
-  this.noFill();
-  this.arc(x, y+20, 60, 35, 0, PI);
 
 }
