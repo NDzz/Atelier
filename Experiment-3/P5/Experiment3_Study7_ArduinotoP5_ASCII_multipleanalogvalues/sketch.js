@@ -1,5 +1,4 @@
-// Daniel Shiffman
-// code for https://youtu.be/vqE8DMfOajk
+//https://www.youtube.com/watch?v=0V3uYA1hafk&list=PLRqwX-V7Uu6aKKsDHZdDvN6oCJ2hRY_Ig&index=6
 
 var video;
 var vScale = 5;
